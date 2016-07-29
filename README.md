@@ -1,30 +1,25 @@
 #Overview
-This project is a simple Docker image that runs [Packer](http://packer.io/), saving you from having to install it.
+This project Docker Machine and Ansible to construct a Plex media server in AWS.
 
 #Prerequisites
-* a working [Docker](http://docker.io) engine
-* a working [Docker Compose](http://docker.io) installation
+* a working [Docker Machine](http://docker.io) installation
+* a working [Ansible](https://www.ansible.com/) installation
+* a working [AWS](https://aws.amazon.com/) account with EC2 and EBS administration rights
+* a set of AWS API keys
+* the ID of the VPC you want to install into 
 
 #Building
-Type `docker-compose build` to build the image.
+There isn't anything to build.  There are just data files fed into shell scripts and tools.
 
 #Installation
-Docker Compose will automatically install the newly built image into the cache.
+Other than the prerequisites, there is nothing to install.
 
 #Tips and Tricks
 
-##Launching The Image
-
-`docker-compose up` will launch the image, proving it built correctly.
-
+## Instance Creation
+ 
 #Troubleshooting
-
-##User Account
-The image assumes that the account running the continer will have a user and group id of 1000:1000.  This allows the container 
-to save files in your home directory and keep the proper permissions.
 
 #License and Credits
 This project is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/).
-
-#List of Changes
 
