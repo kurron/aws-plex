@@ -19,12 +19,12 @@ Other than the prerequisites, there is nothing to install.
 
 #Tips and Tricks
 
-## Configuration
+##Configuration
 Edit `create-instance.sh` and adjust the variables as needed.  The sensitive values, such as your secret key, should
 be exported in your environment **and not in the script**.  You don't want your AWS keys leaking out to the 
 internet.  You have been warned.
 
-## Creating the instance
+##Creating the instance
 
 Run `./create-instance.sh`.  You should see something similar to this:
 
@@ -52,7 +52,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
 
 ```
 
-## Common Commands
+##Common Commands
 
 * `docker-machine active`           Print which machine is active
 * `docker-machine config`           Print the connection config for machine
