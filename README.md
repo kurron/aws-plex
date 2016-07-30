@@ -52,7 +52,29 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
 
 ```
 
-## Instance Creation
+## Common Commands
+
+* `docker-machine active`           Print which machine is active
+* `docker-machine config`           Print the connection config for machine
+* `docker-machine create`           Create a machine
+* `docker-machine env`              Display the commands to set up the environment for the Docker client
+* `docker-machine inspect`          Inspect information about a machine
+* `docker-machine ip`               Get the IP address of a machine
+* `docker-machine kill`             Kill a machine
+* `docker-machine ls`               List machines
+* `docker-machine provision`        Re-provision existing machines
+* `docker-machine regenerate-certs` Regenerate TLS Certificates for a machine
+* `docker-machine restart`          Restart a machine
+* `docker-machine rm`               Remove a machine
+* `docker-machine ssh`              Log into or run a command on a machine with SSH.
+* `docker-machine scp`              Copy files between machines
+* `docker-machine start`            Start a machine
+* `docker-machine status`           Get the status of a machine
+* `docker-machine stop`             Stop a machine
+* `docker-machine upgrade`          Upgrade a machine to the latest version of Docker
+* `docker-machine url`              Get the URL of a machine
+* `docker-machine version`          Show the Docker Machine version or a machine docker version
+* `docker-machine help`             Shows a list of commands or help for one command
  
 #Troubleshooting
 
