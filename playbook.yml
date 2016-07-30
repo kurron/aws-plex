@@ -1,0 +1,8 @@
+#!/usr/bin/env ansible-playbook
+
+- name: Gather prerequisites 
+  hosts: all
+  gather_facts: True
+  tasks:
+    - name: create groups based on distribution
+      group_by: key={{ ansible_distribution }}
