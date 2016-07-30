@@ -6,7 +6,10 @@ This project Docker Machine and Ansible to construct a Plex media server in AWS.
 * a working [Ansible](https://www.ansible.com/) installation
 * a working [AWS](https://aws.amazon.com/) account with EC2 and EBS administration rights
 * a set of AWS API keys
-* the ID of the VPC you want to install into 
+* `export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE`
+* `export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+* `export AWS_ZONE=a`
+
 
 #Building
 There isn't anything to build.  There are just data files fed into shell scripts and tools.
@@ -16,7 +19,14 @@ Other than the prerequisites, there is nothing to install.
 
 #Tips and Tricks
 
-Run `./create-instanc.sh`.  You should see something similar to this:
+## Configuration
+Edit `create-instance.sh` and adjust the variables as needed.  The sensitive values, such as your secret key, should
+be exported in your environment **and not in the script**.  You don't want your AWS keys leaking out to the 
+internet.  You have been warned.
+
+## Creating the instance
+
+Run `./create-instance.sh`.  You should see something similar to this:
 
 ```
 ./create-instance.sh 
