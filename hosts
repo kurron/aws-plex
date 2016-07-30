@@ -1,0 +1,3 @@
+# change the IP to point to the desire target machine
+# Use docker-machine ip plex to get the ip address
+plex ansible_ssh_host=52.90.150.203 ansible_ssh_port=22
