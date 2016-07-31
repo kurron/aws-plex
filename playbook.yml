@@ -23,3 +23,13 @@
             name: "plex-data"
             region: "{{ region }}"
         register: ec2_data_volume
+      - ec2_vol:
+            instance: "{{ instance_id }}"
+            volume_type: "gp2"
+            volume_size: 128
+            device_name: "sdg"
+            state: "present"
+            name: "plex-media"
+            region: "{{ region }}"
+        register: ec2_media_volume
+
