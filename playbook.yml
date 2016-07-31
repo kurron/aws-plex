@@ -6,3 +6,18 @@
   tasks:
     - name: create groups based on distribution
       group_by: key={{ ansible_distribution }}
+
+- name: Create EBS Volumes
+  hosts: Ubuntu
+  become: False
+  vars:
+      instance_id: "i-096470e498bd50913"
+  tasks:
+      - ec2_vol:
+            instance: "{{ instance_id }}"
+            volume_type: "gp2"
+            volume_size: 5
+            device_name: "sdf"
+            state: "present"
+            name: "plex-data"
+        register: ec2_data_volume
