@@ -86,8 +86,9 @@ I used these commands to avoid having to type pass phrases all of the time:
 
 The Ansible documenation says to do this:
 
-* `ssh-agent bash
+* `ssh-agent bash`
 * `ssh-add ~/.ssh/id_rsa`
+
 #License and Credits
 This project is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/).
 

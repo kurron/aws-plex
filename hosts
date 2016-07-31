@@ -1,3 +1,6 @@
 # change the IP to point to the desire target machine
 # Use docker-machine ip plex to get the ip address
-plex ansible_ssh_host=52.90.150.203 ansible_ssh_port=22
+plex ansible_ssh_host=54.209.116.88 ansible_ssh_port=22
+
+# need this so that AWS commands use the local machine for boto
+localhost ansible_connection=local

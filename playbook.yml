@@ -8,10 +8,11 @@
       group_by: key={{ ansible_distribution }}
 
 - name: Create EBS Volumes
-  hosts: Ubuntu
+  hosts: localhost
   become: False
   vars:
-      instance_id: "i-096470e498bd50913"
+      instance_id: "i-0451390c76c495a2e"
+      region: "us-east-1"
   tasks:
       - ec2_vol:
             instance: "{{ instance_id }}"
@@ -20,4 +21,5 @@
             device_name: "sdf"
             state: "present"
             name: "plex-data"
+            region: "{{ region }}"
         register: ec2_data_volume
